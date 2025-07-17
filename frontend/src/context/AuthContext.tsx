@@ -7,6 +7,7 @@ import {
   type ReactNode,
   type SetStateAction,
 } from "react";
+import toast from "react-hot-toast";
 
 type AuthUserType = {
   id: string;
@@ -44,6 +45,7 @@ export const AuthContextProvider = ({ children }: { children: ReactNode }) => {
         setAuthUser(data);
       } catch (err: any) {
         console.error(err);
+        toast.error(err.message);
       } finally {
         setIsLoading(false);
       }
