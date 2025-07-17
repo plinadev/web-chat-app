@@ -27,3 +27,6 @@ coverage/
 dist/
 tmp/
 temp/
+
+
+backend/backend/generated/prisma
