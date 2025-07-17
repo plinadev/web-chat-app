@@ -28,7 +28,7 @@ export const signup = async (req: Request, res: Response) => {
     const salt = await bcryptjs.genSalt(10);
     const hashedPassword = await bcryptjs.hash(password, salt);
 
-    const profilePic = `https://robohash.org/${username}.png?set=set4`;
+    const profilePic = `https://api.dicebear.com/9.x/thumbs/png?seed=${username}`;
 
     const newUser = await prisma.user.create({
       data: {
