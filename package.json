@@ -1,0 +1,30 @@
+{
+  "name": "web-chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch backend/src --exec ts-node backend/src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plinadev/web-chat-app.git"
+  },
+  "keywords": [],
+  "author": "Polina Pavlenko",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/plinadev/web-chat-app/issues"
+  },
+  "homepage": "https://github.com/plinadev/web-chat-app#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
