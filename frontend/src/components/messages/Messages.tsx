@@ -1,4 +1,3 @@
-import type React from "react";
 import useChatScroll from "../../hooks/useChatScroll";
 import useGetMessages from "../../hooks/useGetMessages";
 import useListenMessages from "../../hooks/useListenMessages";
